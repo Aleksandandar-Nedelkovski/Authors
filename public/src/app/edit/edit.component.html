@@ -1,0 +1,11 @@
+<div>
+  <form (submit)="editAuthor(author)">
+    <div class="form-group">
+      <label for="exampleFormControlInput1">Name</label>
+      <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="" name="name"
+        [(ngModel)]="updatedAuthor.name">
+      <button class="btn btn-danger btn-sm" [routerLink]="['/']">Cancel</button>
+      <button class="btn btn-primary btn-sm" type="submit">Update</button>
+    </div>
+  </form>
+</div>
